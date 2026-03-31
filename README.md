@@ -21,6 +21,9 @@ This project was built using the following technologies and techniques:
 - **CSS3**
 - **JavaScript**
 
+![Todo App Main View](./images/se_project_todo-app.png)
+_Main interface showing task list and add task form_
+
 ## Deployment
 
 This project is deployed on GitHub Pages:
