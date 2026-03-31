@@ -25,4 +25,4 @@ This project was built using the following technologies and techniques:
 
 This project is deployed on GitHub Pages:
 
-**[View Live Demo](https://yourusername.github.io/simple-todo-app)**
+**[View Live Demo](https://jonn1193.github.io/se_project_todo-app)**
