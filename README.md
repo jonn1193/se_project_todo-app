@@ -9,8 +9,6 @@ The Simple Todo App allows users to:
 - **Add new tasks** with a title and optional description
 - **Mark tasks as complete** with a single click
 - **Delete individual tasks** when no longer needed
-- **Persist data** using browser local storage (tasks remain after page refresh)
-- **Edit existing tasks** to update titles or descriptions
 - **Set due dates** for time-sensitive tasks
 
 ## Technology
