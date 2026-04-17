@@ -12,14 +12,7 @@ const addTodoForm = addTodoPopupElement.querySelector(".popup__form");
 
 const formValidator = new FormValidator(validationConfig, addTodoForm);
 formValidator.enableValidation();
-
-const generateTodo = (data) => {
-  const todo = new Todo(data, "#todo-template");
-  const todoElement = todo.getView();
-  return todoElement;
-};
-
-const todoCounter = new TodoCounter(initialTodos, ".counter");
+const todoCounter = new TodoCounter(initialTodos, ".counter__text");
 
 const createTodo = (data) => {
   const todo = new Todo(data, "#todo-template", {
@@ -48,7 +41,12 @@ const section = new Section({
 section.renderItems();
 
 const addTodoPopup = new PopupWithForm("#add-todo-popup", (inputValues) => {
-  const newTodo = { name: inputValues.name, completed: false };
+  const newTodo = {
+    id: uuidv4(),
+    name: inputValues.name,
+    date: inputValues.date,
+    completed: false,
+  };
   const element = createTodo(newTodo);
   section.addItem(element);
   todoCounter.updateTotal(true);

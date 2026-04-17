@@ -1,5 +1,3 @@
-export default Todo;
-
 class Todo {
   constructor(data, selector, { handleCheckboxChange, handleDelete } = {}) {
     this._data = data;
@@ -61,3 +59,5 @@ class Todo {
     return this._todoElement;
   }
 }
+
+export default Todo;
