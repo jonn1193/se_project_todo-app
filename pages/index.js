@@ -7,7 +7,8 @@ import Section from "../components/Section.js";
 import PopupWithForm from "../components/PopupWithForm.js";
 
 const addTodoButton = document.querySelector(".button_action_add");
-const addTodoForm = addTodoPopup.querySelector(".popup__form");
+const addTodoPopupElement = document.querySelector("#add-todo-popup");
+const addTodoForm = addTodoPopupElement.querySelector(".popup__form");
 
 const formValidator = new FormValidator(validationConfig, addTodoForm);
 formValidator.enableValidation();

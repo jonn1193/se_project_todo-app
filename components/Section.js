@@ -1,5 +1,3 @@
-export default Section;
-
 class Section {
   constructor({ items, renderer, containerSelector }) {
     this._items = items;
@@ -17,3 +15,5 @@ class Section {
     this._container.prepend(element);
   }
 }
+
+export default Section;
